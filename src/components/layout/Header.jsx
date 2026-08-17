@@ -1,25 +1,12 @@
 import { useState } from 'react'
 import {
   LogoIcon,
-  ChevronDownIcon,
   MenuIcon,
   CloseIcon,
   WhatsAppIcon,
   TelegramIcon,
-} from './icons'
-
-const NAV_LINKS = [
-  { label: 'Главная', href: '#home', active: true },
-  { label: 'О нас', href: '#about' },
-  { label: 'Наши услуги', href: '#services' },
-  { label: 'Этапы работы', href: '#process' },
-  { label: 'Стоимость', href: '#pricing' },
-]
-
-const navLinkClasses = (active) =>
-  `whitespace-nowrap text-[15px] font-medium transition-colors hover:text-primary lg:text-sm ${
-    active ? 'text-primary' : 'text-text'
-  }`
+} from '../../assets/icons'
+import Navigation from './Navigation'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,46 +40,7 @@ function Header() {
           {isMenuOpen ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
         </button>
 
-        {/* Nav */}
-        <nav
-          className={`fixed inset-x-0 top-16 bottom-0 flex flex-col justify-start overflow-y-auto bg-surface p-6 transition-transform duration-250 ease-out md:static md:flex md:flex-1 md:translate-x-0 md:flex-row md:justify-center md:overflow-visible md:bg-transparent md:p-0 ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-          aria-label="Основная навигация"
-        >
-          <ul className="flex flex-col items-start gap-5 md:flex-row md:items-center md:gap-4 lg:gap-7">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className={`text-lg md:text-[15px] ${navLinkClasses(link.active)}`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-            <li>
-              <button
-                type="button"
-                className="flex items-center gap-1.5 text-lg font-medium text-text transition-colors hover:text-primary md:text-[15px]"
-              >
-                Ещё
-                <ChevronDownIcon />
-              </button>
-            </li>
-          </ul>
-
-          {/* Contacts shown inside the mobile drawer */}
-          <div className="mt-8 flex flex-col gap-1 border-t border-border pt-6 md:hidden">
-            <a href="tel:+74993488216" className="text-lg font-bold text-primary">
-              8 (499) 348-82-16
-            </a>
-            <a href="mailto:hello@softerio.ru" className="text-sm text-text-muted">
-              hello@softerio.ru
-            </a>
-          </div>
-        </nav>
+        <Navigation isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
         {/* Contacts */}
         <div className="order-2 ml-auto flex shrink-0 items-center gap-2 md:order-none md:ml-0 md:gap-4">

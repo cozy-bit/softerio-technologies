@@ -1,4 +1,5 @@
-import { RocketIcon, TrophyIcon, GridBadgeIcon, SearchIcon, CodeIcon } from './icons'
+import { RocketIcon, TrophyIcon, GridBadgeIcon, SearchIcon, CodeIcon } from '../../assets/icons'
+import Button from '../ui/Button'
 
 const FEATURES = [
   {
@@ -11,7 +12,7 @@ const FEATURES = [
   },
 ]
 
-function Hero() {
+function HeroSection() {
   return (
     <section className="relative isolate overflow-hidden bg-linear-to-br from-[#5A8CF0] via-[#3E70E8] to-[#1E4FC7]">
       {/* decorative isometric grid, right side */}
@@ -47,18 +48,12 @@ function Hero() {
           </ul>
 
           <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              href="#request"
-              className="rounded-xl bg-[#EF6461] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 sm:text-base"
-            >
+            <Button href="#request" variant="primary">
               Заказать приложение
-            </a>
-            <a
-              href="#consult"
-              className="rounded-xl bg-primary-dark px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 sm:text-base"
-            >
+            </Button>
+            <Button href="#consult" variant="secondary">
               Онлайн-консультация
-            </a>
+            </Button>
           </div>
         </div>
 
@@ -133,4 +128,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default HeroSection
