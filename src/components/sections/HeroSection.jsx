@@ -57,23 +57,27 @@ function HeroSection() {
           </div>
         </div>
 
-        {/* Illustration column */}
-        <div className="relative hidden h-[520px] lg:block">
-          {/* glossy spheres */}
-          <div className="absolute top-[190px] left-[10px] h-16 w-16 rounded-full bg-[radial-gradient(circle_at_32%_28%,#dff0ff,#4f8cf0_55%,#1c3f9c)] shadow-[0_18px_30px_rgba(10,30,90,0.4)]" />
-          <div className="absolute top-[170px] right-[70px] h-9 w-9 rounded-full bg-[radial-gradient(circle_at_32%_28%,#dff0ff,#4f8cf0_55%,#1c3f9c)] shadow-[0_10px_18px_rgba(10,30,90,0.4)]" />
-          <img
-            src="/sphere-white-glossy.png"
-            alt=""
-            className="absolute bottom-[-40px] right-[20px] h-44 w-44 object-contain"
-          />
+        {/* Illustration column — shown at every size, scaled down on mobile/tablet
+            instead of hidden, so the phone graphic stays part of the mobile
+            experience too. */}
+        <div className="relative mx-auto h-[230px] w-full sm:h-[320px] lg:mx-0 lg:h-[520px] lg:w-auto">
+          <div className="absolute top-0 left-1/2 h-[520px] w-[620px] origin-top -translate-x-1/2 scale-[0.44] sm:scale-[0.61] lg:left-0 lg:translate-x-0 lg:scale-100">
+            {/* glossy spheres */}
+            <div className="absolute top-[190px] left-[10px] h-16 w-16 rounded-full bg-[radial-gradient(circle_at_32%_28%,#dff0ff,#4f8cf0_55%,#1c3f9c)] shadow-[0_18px_30px_rgba(10,30,90,0.4)]" />
+            <div className="absolute top-[170px] right-[70px] h-9 w-9 rounded-full bg-[radial-gradient(circle_at_32%_28%,#dff0ff,#4f8cf0_55%,#1c3f9c)] shadow-[0_10px_18px_rgba(10,30,90,0.4)]" />
+            <img
+              src="/sphere-white-glossy.png"
+              alt=""
+              className="absolute bottom-[-40px] right-[20px] h-44 w-44 object-contain"
+            />
 
-          {/* phone / cards illustration */}
-          <img
-            src="/app.png"
-            alt="Иллюстрация мобильного приложения"
-            className="absolute top-0 right-[10px] h-[520px] w-auto object-contain"
-          />
+            {/* phone / cards illustration */}
+            <img
+              src="/app.png"
+              alt="Иллюстрация мобильного приложения"
+              className="absolute top-0 right-[10px] h-[520px] w-auto object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
