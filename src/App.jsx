@@ -1,10 +1,14 @@
-import Header from './components/Header/Header'
+import Header from './components/layout/Header'
+import HeroSection from './components/sections/HeroSection'
 
 function App() {
   return (
     <>
       <Header />
-      <main>{/* остальные секции лендинга добавит команда */}</main>
+      <main>
+        <HeroSection />
+        {/* остальные секции лендинга добавит команда */}
+      </main>
     </>
   )
 }
