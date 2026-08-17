@@ -29,10 +29,10 @@ function Header() {
           </span>
         </a>
 
-        {/* Mobile menu toggle */}
+        {/* Mobile/tablet menu toggle */}
         <button
           type="button"
-          className="order-3 ml-auto flex shrink-0 p-0.5 text-text md:hidden"
+          className="order-3 ml-auto flex shrink-0 p-0.5 text-text lg:hidden"
           aria-label={isMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((open) => !open)}
@@ -43,7 +43,7 @@ function Header() {
         <Navigation isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
         {/* Contacts */}
-        <div className="order-2 ml-auto flex shrink-0 items-center gap-2 md:order-none md:ml-0 md:gap-4">
+        <div className="order-2 ml-auto flex shrink-0 items-center gap-2 lg:order-none lg:ml-0 lg:gap-4">
           <div className="hidden flex-col items-end leading-tight lg:flex">
             <a href="tel:+74993488216" className="text-[15px] font-bold whitespace-nowrap text-primary">
               8 (499) 348-82-16
@@ -53,7 +53,7 @@ function Header() {
             </a>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="hidden items-center gap-1.5 sm:gap-2 lg:flex">
             <a
               href="https://wa.me/74993488216"
               target="_blank"
