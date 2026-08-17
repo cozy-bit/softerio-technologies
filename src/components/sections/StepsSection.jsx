@@ -142,7 +142,7 @@ const StepsSection = () => {
 
           {/* Кнопка заявки */}
           <div className="flex items-start justify-center min-h-[220px] lg:min-h-full">
-            <button className="w-full h-full max-h-[140px] bg-[#EF4444] hover:bg-red-600 transition-colors text-white font-semibold text-lg rounded-2xl shadow-lg shadow-red-500/30 flex items-center justify-center p-6 text-center">
+            <button className="w-full h-full max-h-[140px] bg-red-500 hover:bg-red-600 transition-colors text-white font-semibold text-lg rounded-2xl shadow-lg shadow-red-500/30 flex items-center justify-center p-6 text-center">
               Оставить заявку
             </button>
           </div>

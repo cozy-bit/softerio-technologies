@@ -103,9 +103,9 @@ const ServicesSection = () => {
         </pre>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-full mx-auto relative z-10">
         <div className="flex flex-col text-center md:text-start md:flex-row md:items-center gap-6 mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl shrink-0 md:text-5xl font-extrabold text-slate-900 tracking-tight">
             Наши услуги
           </h2>
           <p className="text-slate-500 md:max-w-md">
@@ -118,7 +118,7 @@ const ServicesSection = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center relative border border-slate-100 min-h-[420px] justify-between"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center relative border border-slate-100 min-h-[220px] justify-between"
             >
               <div className="my-6 flex items-center justify-center h-28">
                 {service.icon}
@@ -130,7 +130,7 @@ const ServicesSection = () => {
                 </h3>
 
                 {service.description && (
-                  <div className="text-slate-500 text-xs leading-relaxed space-y-3 text-left mb-6 px-2">
+                  <div className="text-slate-500 text-xs leading-relaxed space-y-3 text-left mb-6 px-2 hidden lg:block">
                     {service.description.map((paragraph, idx) => (
                       <p key={idx}>{paragraph}</p>
                     ))}
