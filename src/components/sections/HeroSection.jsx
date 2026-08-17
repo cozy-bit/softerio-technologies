@@ -55,26 +55,26 @@ function HeroSection() {
       <div className="relative z-10 mx-auto grid max-w-[1288px] gap-12 px-6 py-16 md:px-10 lg:grid-cols-2 lg:items-center lg:py-24">
         {/* колонка с текстом */}
         <div>
-          <h1 className="max-w-[560px] text-[30px] leading-[1.15] font-extrabold text-white sm:text-[38px] lg:text-[44px]">
+          <h1 className="max-w-[580px] text-5xl leading-[1.12] font-semibold tracking-tight text-center text-white sm:text-[42px] lg:text-[48px]">
             Разработка мобильных приложений и сервисов
           </h1>
 
-          <ul className="mt-8 flex flex-col gap-5">
+          <ul className="mt-10 flex flex-col gap-6">
             {FEATURES.map(({ icon, text }) => (
-              <li key={text} className="flex items-start gap-4">
+              <li key={text} className="flex items-center gap-4">
                 <img
                   src={icon}
                   alt=""
-                  className="mt-0.5 h-6 w-6 shrink-0 object-contain"
+                  className="h-8 w-8 shrink-0 object-contain brightness-0 invert"
                 />
-                <span className="text-[15px] leading-snug text-white/90 sm:text-base">
+                <span className="text-[16px] leading-[1.3] font-normal text-white sm:text-[18px]">
                   {text}
                 </span>
               </li>
             ))}
           </ul>
 
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <Button
               href="#request"
               variant="primary"

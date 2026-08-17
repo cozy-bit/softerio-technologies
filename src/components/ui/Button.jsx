@@ -14,7 +14,7 @@ function Button({
   children,
   ...props
 }) {
-  const classes = `rounded-xl px-7 py-4 text-sm font-semibold shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl sm:text-base ${VARIANT_CLASSES[variant]} ${className}`;
+  const classes = `rounded-xl px-7 py-8 sm:py-4 text-sm font-semibold shadow-lg shadow-black/10 transition-transform hover:-translate-y-0.5 hover:shadow-xl sm:text-base ${VARIANT_CLASSES[variant]} ${className}`;
 
   if (href) {
     return (
