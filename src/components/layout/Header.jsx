@@ -53,7 +53,7 @@ function Header() {
             </a>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="hidden items-center gap-1.5 sm:gap-2 md:flex">
             <a
               href="https://wa.me/74993488216"
               target="_blank"

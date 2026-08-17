@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from '../../assets/icons'
+import { ChevronDownIcon, WhatsAppIcon, TelegramIcon } from '../../assets/icons'
 
 const NAV_LINKS = [
   { label: 'Главная', href: '#home', active: true },
@@ -50,13 +50,36 @@ function Navigation({ isOpen, onClose }) {
       </ul>
 
       {/* Контакты показываются только внутри мобильного drawer */}
-      <div className="mt-8 flex flex-col gap-1 border-t border-border pt-6 md:hidden">
-        <a href="tel:+74993488216" className="text-lg font-bold text-primary">
-          8 (499) 348-82-16
-        </a>
-        <a href="mailto:hello@softerio.ru" className="text-sm text-text-muted">
-          hello@softerio.ru
-        </a>
+      <div className="mt-8 flex flex-col gap-4 border-t border-border pt-6 md:hidden">
+        <div className="flex flex-col gap-1">
+          <a href="tel:+74993488216" className="text-lg font-bold text-primary">
+            8 (499) 348-82-16
+          </a>
+          <a href="mailto:hello@softerio.ru" className="text-sm text-text-muted">
+            hello@softerio.ru
+          </a>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <a
+            href="https://wa.me/74993488216"
+            target="_blank"
+            rel="noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-primary to-accent-purple text-white"
+            aria-label="Написать в WhatsApp"
+          >
+            <WhatsAppIcon className="h-[18px] w-[18px]" />
+          </a>
+          <a
+            href="https://t.me/softerio"
+            target="_blank"
+            rel="noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-lg bg-linear-to-br from-primary to-accent-purple text-white"
+            aria-label="Написать в Telegram"
+          >
+            <TelegramIcon className="h-[18px] w-[18px]" />
+          </a>
+        </div>
       </div>
     </nav>
   )
