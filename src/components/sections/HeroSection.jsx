@@ -54,8 +54,8 @@ function HeroSection() {
 
       <div className="relative z-10 mx-auto grid max-w-[1288px] gap-12 px-6 py-16 md:px-10 lg:grid-cols-2 lg:items-center lg:py-24">
         {/* колонка с текстом */}
-        <div>
-          <h1 className="max-w-[580px] text-5xl leading-[1.12] font-semibold tracking-tight text-center text-white sm:text-[42px] lg:text-[48px]">
+        <div className="flex flex-col md:items-center  lg:items-start lg:text-start">
+          <h1 className="max-w-[580px] text-5xl lg:text-4xl lg:text-start leading-[1.12] font-semibold tracking-tight text-center text-white">
             Разработка мобильных приложений и сервисов
           </h1>
 
