@@ -1,5 +1,6 @@
-import rightBottom from '../../assets/mobileAppsSection-images/right-bottom.png'
+import mobileIcon from '../../assets/icons/mobile-icon.png'
 import leftLower from '../../assets/mobileAppsSection-images/left-lower.png'
+import rightBottom from '../../assets/mobileAppsSection-images/right-bottom.png'
 
 const plans = [
 	{
@@ -88,25 +89,7 @@ const BriefcaseIcon = () => (
 	</svg>
 )
 
-const SettingsIcon = () => (
-	<svg viewBox='0 0 48 48' fill='none' className='h-10 w-10 sm:h-11 sm:w-11'>
-		<path
-			d='M20.7 7.7a4 4 0 0 1 6.6 0l1.4 2.1a16 16 0 0 1 3.5 2l2.5-.3a4 4 0 0 1 4.2 4.9l-.6 2.5a16 16 0 0 1 0 4.1l.6 2.5a4 4 0 0 1-4.2 4.9l-2.5-.3a16 16 0 0 1-3.5 2l-1.4 2.1a4 4 0 0 1-6.6 0l-1.4-2.1a16 16 0 0 1-3.5-2l-2.5.3a4 4 0 0 1-4.2-4.9l.6-2.5a16 16 0 0 1 0-4.1l-.6-2.5a4 4 0 0 1 4.2-4.9l2.5.3a16 16 0 0 1 3.5-2l1.4-2.1Z'
-			fill='#FEE2E2'
-			stroke='currentColor'
-			strokeWidth='1.8'
-		/>
-		<circle
-			cx='24'
-			cy='21'
-			r='6'
-			fill='#EF4444'
-			stroke='currentColor'
-			strokeWidth='1.8'
-		/>
-		<circle cx='24' cy='21' r='2.2' fill='white' />
-	</svg>
-)
+const SettingsIcon = () => <img src={mobileIcon} alt='mobile-icon' />
 
 const CheckIcon = ({ red = false }) => (
 	<span
@@ -286,11 +269,11 @@ const MobileAppsSection = () => {
 					})}
 				</div>
 
-				<div className='mt-7 flex justify-center gap-2 md:hidden'>
+				{/* <div className='mt-7 flex justify-center gap-2 md:hidden'>
 					<span className='h-2.5 w-2.5 rounded-full bg-blue-500' />
 					<span className='h-2.5 w-2.5 rounded-full bg-gray-300' />
 					<span className='h-2.5 w-2.5 rounded-full bg-gray-300' />
-				</div>
+				</div> */}
 			</div>
 		</section>
 	)
