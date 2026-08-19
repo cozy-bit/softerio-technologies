@@ -18,7 +18,7 @@ function OrderFormSection() {
   };
 
   return (
-    <section id="request" className="bg-surface-muted py-16 md:py-24">
+    <section id="request" className="bg-[#fff8ff] py-16 md:py-12">
       <div className="mx-auto max-w-[1288px] px-6 md:px-10">
         <h2 className="mb-12 text-center text-3xl font-extrabold text-text sm:text-4xl">
           Заказать приложение

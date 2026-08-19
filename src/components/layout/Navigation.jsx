@@ -6,10 +6,10 @@ const NAV_LINKS = [
   { label: 'О нас', href: '#about' },
   { label: 'Наши услуги', href: '#services' },
   { label: 'Этапы работы', href: '#process' },
-  { label: 'Стоимость', href: '#pricing' },
 ]
 
 const MORE_LINKS = [
+  { label: 'Стоимость', href: '#pricing' },
   { label: 'Статьи', href: '#articles' },
   { label: 'Контакты', href: '#contacts' },
 ]
