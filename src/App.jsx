@@ -5,7 +5,7 @@ import MobileAppsSection from './components/sections/MobileAppsSection'
 import OrderFormSection from './components/sections/OrderFormSection'
 import ServicesSection from './components/sections/ServicesSection'
 import StepsSection from './components/sections/StepsSection'
-import WichTasksSection from './components/sections/WichTasksSection'
+import WichTasksSection from './components/sections/WhichTasksSection'
 
 function App() {
 	return (

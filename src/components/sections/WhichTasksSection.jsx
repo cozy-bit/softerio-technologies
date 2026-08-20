@@ -61,7 +61,7 @@ const WichTasksSection = () => {
           <div className="relative mx-auto mt-10 max-w-[1040px] lg:mt-12">
             <div className="pointer-events-none absolute left-1/2 top-1/2 hidden h-[440px] w-[440px] -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#EEF3FC] lg:block" />
 
-            <div className="pointer-events-none absolute left-1/2 top-1/2 hidden h-[375px] w-[375px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F7F9FD] lg:block" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 hidden h-93.75 w-[375px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F7F9FD] lg:block" />
 
             <div className="relative grid items-center gap-12 lg:grid-cols-[1fr_310px_1fr] lg:gap-12">
               <div className="order-2 space-y-12 lg:order-1 lg:space-y-20">
